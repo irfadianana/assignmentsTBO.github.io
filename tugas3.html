@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NFA & DFA</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                        
+  <link rel="stylesheet" href="css/style.css">                                    
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Irfadiana Nurhasanah</a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" style="color: #64a19d;" href="#about">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas1.html">TBO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas2.html">Big-O <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas4.html">Regex <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas5.html">CFG <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </span>
+    </div>
+  </nav>
+
+ <div class="container">
+
+<!-- Tugas 1 -->
+<section id="tugas1" class="row tm-section tm-mb-30">
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+  <div class="tm-flex-center p-5">
+    <div class="tm-md-flex-center">
+      <h2 class="tm-text-color-primary mb-4">NFA to DFA Conversion</h2>
+      <p class="mb-4">
+        Berikut ini adalah prosedur merubah NFA (Non-Deterministic Finite Automata) menjadi DFA (Deterministic Finite Automata) : <br>
+        1. Buat semua state yang merupakan subset dari state semula. Jumlah state menjadi 2Q.<br>
+        2. Telusuri transisi state-state yang baru terbentuk, dari diagram transisi.<br>
+        3. Tentukan state awal : {q0}<br>
+        4. Tentukan state akhir adalah state yang elemennya mengandung state akhir.<br>
+        5. Reduksi state yang tak tercapai oleh state awal.<br>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+  <div class="tm-flex-center p-5 tm-bg-color-primary">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 p-0 text-center">
+      <img src="img/tugas3awal.png" alt="Image" class="img-fluid">
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- nomor 1 -->
+<section id="tugas2" class="row tm-section tm-col-md-reverse">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+    <img src="img/step0.png" alt="Image" class="img-fluid">
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="tm-flex-center p-5">
+      <div class="tm-flex-center tm-flex-col">
+        <h2 class="tm-align-left mb-4">Contoh soal konversi NFA ke DFA</h2>
+        <p class="mb-4">
+          Gambar disamping menunjukkan soal NFA (Non-Deterministic Finite Automata) yang akan diubah menjadi DFA (Deterministic Finite Automata).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- nomor 2 -->
+ <section id="tugas1" class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">1. Buat semua state yang merupakan subset dari state semula. Jumlah state menjadi 2Q.</h2>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+       <img src="img/step1.png" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+
+ <!-- nomor 2 -->
+ <section id="tugas1" class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">2. Telusuri transisi state-state yang baru terbentuk, dari diagram transisi.</h2>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+       <img src="img/step2.png" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+
+ <!-- nomor 2 -->
+<section id="tugas1" class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">3. Tentukan state awal : {q0}</h2>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+       <img src="img/step3.png" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+
+  <!-- nomor 2 -->
+<section id="tugas1" class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">4. Tentukan state akhir adalah state yang elemennya mengandung state akhir.</h2>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+       <img src="img/step4.png" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+
+  <!-- nomor 2 -->
+<section id="tugas1" class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">5. Reduksi state yang tak tercapai oleh state awal.</h2>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+       <img src="img/step5.png" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+
+  <!-- nomor 2 -->
+<section id="tugas1" class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">Graph transisi hasil dari langkah-langkah di atas akan terlihat seperti pada gambar disamping : </h2>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 p-0 text-center">
+       <img src="img/hasiltugas3.png" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+
+ <!-- Contact-->
+ <section id="about" class="contact-section bg-black">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">Irfadiana Nurhasanah - D121181501</h4>
+                      <hr class="my-4" />
+                      <div class="small text-black-50">Informatics Engineering</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-envelope text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">E-mail</h4>
+                      <hr class="my-4" />
+                      <div class="small text-black-50"><a href="#!">irfadiananurhasanah@gmail.com</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">GitHub</h4>
+                      <hr class="my-4" />
+                      <div class="small text-black-50">irfadianana</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="row">
+  <div class="col-lg-12">
+    <p class="text-center small tm-copyright-text mb-0">Copyright &copy; <span class="tm-current-year">2020 | </span> Irfadiana Nurhasanah</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
