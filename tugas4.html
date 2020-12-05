@@ -51,20 +51,30 @@
 <!-- Tugas 2 -->
 <section id="tugas2" class="row tm-section tm-mb-30">
   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-    <img src="img/img28.jpg" alt="Image" class="img-fluid">
+    <img src="img/tugas4.png" alt="Image" class="img-fluid">
   </div>
   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <div class="tm-flex-center p-5">
       <div class="tm-flex-center tm-flex-col">
-        <h2 class="tm-align-left">Big-O Notation</h2>
+        <h2 class="tm-align-left">Regular Expression</h2>
         <p>
-          1. Definisi Notasi Big O<br>
-          2. Kegunaan Notasi Big O<br>
-          3. Contoh-contoh Notasi Big O
+          Regular Expression yang biasanya disingkat menjadi Regex, merupakan sebuah teks (string) 
+          yang mendefinisikan sebuah pola pencarian sehingga dapat membantu kita untuk melakukan 
+          matching, locating, dan manipulasi teks.<br>
+          Contoh Regular Expression : <br>
+          > (0+1)* : himpunan seluruh string yang dapat dibentuk dari simbol '0' dan '1'<br>
+          > (0+1)*00(0+1)* : himpunan string biner yang mengandung paling sedikit satu substring '00'<br>
+          > (0+1)*00 : himpunan string biner yang diakhiri dengan '00'
         </p>
       </div>
     </div>
   </div>
+</section>
+
+<section class="tm-mb-30">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+  <h2>Pemanfaatan Regular Expression</h2>
+</div>
 </section>
 
 <!-- nomor 1 -->
@@ -72,14 +82,18 @@
  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
   <div class="tm-flex-center p-5">
     <div class="tm-md-flex-center">
-      <h2 class="tm-text-color-primary mb-4">Definisi Notasi Big O</h2>
-      <p class="mb-4">Notasi Big O adalah cara untuk mengkonversi keseluruhan langkah-langkah suatu algoritma kedalam bentuk Aljabar, yaitu dengan 
-        menghiraukan konstanta yang lebih kecil dan koefisien yang tidak berdampak besar terhadap keseluruhan kompleksitas permasalahan yang diselesaikan 
-        oleh algoritma.
-      </p>
-      <p class="mb-4">Notasi Big O merupakan suatu cara sederhana untuk mengetahui
-        berapa lama waktu yang dibutuhkan untuk menjalankan suatu algoritma dengan input tertentu (n).
-        Singkatnya, Notasi Big O digunakan untuk mengukur tingkat kompleksitas suatu algoritma. 
+      <h2 class="tm-text-color-primary mb-4">1. Bahasa Terkait dengan Regular Expression</h2>
+      <p class="mb-4">Regular Expression dapat digunakan untuk mendeskripsikan beberapa bahasa sederhana. 
+        Jika r adalah Regular Expression, kita akan membiarkan L (r) menunjukkan bahasa yang terkait dengan r. <br>
+        Bahasa L(r) yang dilambangkan dengan Regular Expression apapun, r ditentukan oleh aturan berikut : <br>
+        1. ∅ adalah ekspresi reguler yang menunjukkan himpunan kosong, <br>
+        2. λ adalah ekspresi reguler yang menunjukkan {λ}, <br>
+        3. Untuk setiap a ∈ Σ, a adalah ekspresi reguler yang menunjukkan {a}. <br>
+        Jika r1 dan r2 adalah Regular Expression, maka <br>
+        4. L (r1 + r2) = L (r1) ∪ L (r2), <br>
+        5. L (r1 · r2) = L (r1) L (r2), <br>
+        6. L ((r1)) = L (r1), <br>
+        7. L (r ∗ 1) = (L (r1)) ∗.
       </p>
     </div>
   </div>
@@ -87,7 +101,7 @@
 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
   <div class="tm-flex-center tm-bg-color-primary">
     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-      <img src="img/img39.jpg" alt="Image" class="img-fluid">
+      <img src="img/tugas4dua.png" alt="Image" class="img-fluid">
     </div>
   </div>
 </div>
@@ -96,20 +110,19 @@
 <!-- nomor 2 -->
 <section id="tugas2" class="row tm-section tm-mb-30">
   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-    <img src="img/img40.jpg" alt="Image" class="img-fluid">
+    <img src="img/tugas4tiga.png" alt="Image" class="img-fluid">
   </div>
   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <div class="tm-flex-center p-5">
       <div class="tm-flex-center tm-flex-col">
-        <h2 class="tm-align-left">Kegunaan Notasi Big O</h2>
+        <h2 class="tm-align-left">2. Regex untuk Validasi Data</h2>
         <p class="mb-4">
-          > Notasi Big O digunakan untuk menggambarkan performa atau kompleksitas dari sebuah algoritma.
-          Secara spesifik Big O menggambarkan skenario terburuk, dan bisa digunakan untuk menghitung waktu 
-          eksekusi yang dibutuhkan atau ruang yang digunakan (contohnya pada memori atau disk) oleh algoritma.
-        </p>
-        <p class="mb-4">
-          > Notasi Big O digunakan untuk mengklasifikasikan algoritma sesuai dengan bagaimana waktu proses (runtime)
-          ataupun kebutuhan ruang meningkat seiring dengan meningkatnya size dari inputnya.
+          Regex dapat digunakan untuk matching atau pencocokan teks, contohnya seperti pada pengaturan password. <br>
+          > Pertama-tama, kita harus mendefinisikan pola regex untuk data yang valid. Kemudian, kita lakukan pencocokan dengan pola tersebut. <br>
+          > Contohnya seperti pada HTML dan Javascript yang ada pada code disamping <br>
+          > Atribut <b>pattern</b> digunakan untuk menyimpan pola regex. Pada contoh di samping, polanya adalah pengecekan karakter yang diinputkan pada password. <br>
+          > Pada contoh ini, regex tidak digunakan dalam code Javascript melainkan digunakan pada HTML. <br>
+          > Code Javascript di samping, hanya bertugas untuk mengecek apakah nilai dari field password sudah sesuai atau tidak dengan yang ada pada atribut <b>pattern</b> <br>
         </p>
       </div>
     </div>
@@ -118,25 +131,28 @@
 
 <!-- nomor 3 -->
 <section class="row tm-section tm-mb-30">
- <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+ <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
     <div class="tm-md-flex-center">
-     <h2 class="mb-4 tm-text-color-primary">Contoh-contoh Notasi Big O</h2>
-     <p>> O(1) -> bilangan/angka konstan</p>
-     <p class="mb-4">Banyaknya input yang diberikan kepada sebuah algoritma, tidak akan mempengaruhi
-       waktu proses (runtime) dari algoritma tersebut.
+     <h2 class="mb-4 tm-text-color-primary">3. Regex untuk Mendeskripsikan Pola Sederhana</h2>
+     <p>Setelah dieksplorasi, hubungan antara finite akseptor dan beberapa konstituen bahasa pemrograman yang lebih sederhana, 
+       seperti pengidentifikasi, atau bilangan bulat dan real. Hubungan antara finite automata dan regex berarti kita juga dapat menggunakan 
+       regex sebagai cara untuk mendeskripsikan fitur-fitur ini. Misalnya, dalam bahasa pemrograman, himpunan konstanta bilangan bulat ditentukan 
+       oleh regex <b>sdd*</b>, di mana s adalah tanda, dengan kemungkinan nilai dari {+, -, λ}, dan d adalah singkatan dari angka 0 sampai 9. Konstanta 
+       bilangan bulat adalah kasus sederhana dari apa yang biasanya disebut "pola", istilah yang merujuk pada 
+       sekumpulan objek yang memiliki beberapa properti umum. Pencocokan pola mengacu pada menetapkan objek tertentu 
+       ke salah satu dari beberapa kategori. Seringkali, kunci sukses pencocokan pola adalah menemukan cara yang efektif untuk 
+       mendeskripsikan pola.
      </p>
-     <p>> O(n) -> n memiliki pengaruh terbesar</p>
-     <p class="mb-4">Runtime dari fungsi berbanding lurus dengan jumlah input yang diberikan.</p>
-     <p>> O(n^2) -> n^2 memiliki pengaruh terbesar</p>
-     <p class="mb-4">Runtime dari fungsi adalah sebesar n^2, dimana n adalah jumlah input dari fungsi tersebut.</p>
+     <p>
+      Contoh: <br>
+      Penerapan pencocokan pola terjadi dalam pengeditan teks. Semua editor teks memungkinkan file dipindai untuk mengetahui keberadaan string tertentu; kebanyakan editor memperluas ini untuk mengizinkan pencarian pola. Misalnya, editor vi dalam sistem operasi UNIX mengenali perintah / aba * c / sebagai instruksi untuk mencari file untuk kemunculan pertama dari string ab, diikuti dengan bilangan sembarang a, diikuti oleh c. Kami melihat dari contoh ini perlunya editor pencocokan pola untuk bekerja dengan ekspresi reguler. <br>
+      Tugas yang menantang dalam aplikasi semacam itu adalah menulis program yang efisien untuk mengenali pola string. Mencari file untuk kejadian string tertentu adalah latihan pemrograman yang sangat sederhana, tetapi di sini situasinya lebih rumit. Kita harus berurusan dengan pola rumit sewenang-wenang yang jumlahnya tak terbatas; selanjutnya, pola tidak diperbaiki sebelumnya, tetapi dibuat pada waktu proses. Deskripsi pola merupakan bagian dari masukan, sehingga proses pengenalan harus fleksibel. Untuk mengatasi masalah ini, ide dari teori automata sering digunakan.
+     </p>
    </div>
  </div>
 </div>
-<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-xl-right text-md-center text-center mt-5 mt-lg-0 pr-lg-0">
- <img src="img/img33.jpg" alt="Image" class="img-fluid">
 </div>
-</section>
 
  <!-- Contact-->
  <section id="about" class="contact-section bg-black">
