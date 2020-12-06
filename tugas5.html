@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Context Free Grammars</title>
+  <title>Context Free Grammar</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">                                        
@@ -53,114 +53,94 @@
  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
   <div class="tm-flex-center p-5">
     <div class="tm-md-flex-center">
-      <h2 class="tm-text-color-primary mb-4">Language and Automata Theory</h2>
+      <h2 class="tm-text-color-primary mb-4">Context Free Grammar</h2>
       <p class="mb-4">
-        1. Apa saja yang dipelajari dalam TBO<br>
-        2. Apa fungsi ilmu yang dipelajari dalam TBO<br>
-        3. Contoh penerapan ilmu TBO
+        Context Free Grammar (CFG)/ Bahasa Bebas Konteks adalah sebuah tata bahasa dimana tidak terdapat pembatasan pada hasil produksinya. 
+        CFG mempunyai tujuan sama seperti halnya tata bahasa regular yaitu merupakan suatu cara untuk menunjukkan bagaimana menghasilkan suatu 
+        untai-untai dalam sebuah bahasa. Context-free grammars telah memainkan peran sentral dalam teknologi kompiler sejak tahun 1960-an. 
+        Mereka mengubah implementasi parser (fungsi yang menemukan struktur program) dari tugas implementasi ad-hoc yang memakan waktu 
+        menjadi pekerjaan rutin yang bisa dilakukan di sore hari. Baru-baru ini, tata bahasa bebas konteks telah digunakan untuk menggambarkan 
+        format dokumen, melalui apa yang disebut definisi tipe dokumen (DTD) yang digunakan dalam komunitas XML (bahasa markup yang dapat diperluas) 
+        untuk pertukaran informasi di Web.
       </p>
     </div>
   </div>
 </div>
 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
   <div class="tm-flex-center p-5 tm-bg-color-primary">
-    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-      <img src="img/img26.png" alt="Image" class="img-fluid">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 p-0 text-center">
+      <img src="img/tugas5.png" alt="Image" class="img-fluid">
     </div>
   </div>
 </div>
 </section>
 
-<!-- nomor 1 -->
-<section id="tugas2" class="row tm-section tm-col-md-reverse">
-  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-    <img src="img/rsz_img29.png" alt="Image" class="img-fluid">
+<section class="tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
+    <h2>Aplikasi Pemanfaatan Context Free Grammar </h2>
   </div>
-  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-    <div class="tm-flex-center p-5">
-      <div class="tm-flex-center tm-flex-col">
-        <h2 class="tm-align-left mb-4">Apa saja yang dipelajari dalam TBO</h2>
-        <p class="mb-4">
-          - Mempelajari tentang finite automata dan pola bahasa yang mampu dijelaskan oleh finite automata.
-          Biasanya disebut regular languages dengan topik antara lain automata berhingga deterministik (DFA) dan nondeterministik (NFA), 
-          regular expressions, serta kesamaan dari mekanisme pendefinisian bahasa.
-        </p>
-        <p class="mb-4">
-          - Mempelajari tentang context-free grammars dan bahasanya. Grammars merupakan model yang sangat berguna 
-          ketika mendesain software yang memproses data dalam struktur rekursif. Salah satu contohnya adalah 'parser'
-          yang merupakan komponen dari sebuah compiler yang terhubung dengan fitur nested rekursif dari bahasa pemrograman.
-        </p>
-        <p class="mb-4">
-          - Turing machine, merupakan sejenis automaton yang dapat mendefinisikan semua bahasa yang bisa diartikan oleh 
-          semua jenis computing device. Mempelajari bagaimana 'problem' (mathematical questions) bisa diekspresikan ke dalam bahasa.
-          Problem tersebut dikatakan 'decidable' ketika bahasanya bisa diartikan oleh Turing machine, sedangkan jika tidak bisa 
-          maka problem tersebut dikatakan 'undecidable'
-        </p>
-      </div>
+  </section>
+
+  <!-- nomor 1 -->
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <p>
+        Context-free grammar awalnya disusun oleh N. Chomsky sebagai cara untuk mendeskripsikan bahasa alami. Janji itu belum terpenuhi. Namun, karena penggunaan untuk konsep yang didefinisikan secara rekursif dalam Ilmu Komputer telah berlipat ganda, begitu pula kebutuhan CFG sebagai cara untuk menggambarkan contoh konsep ini. Akan dibuat sketsa dua kegunaan ini, satu lama dan satu baru.
+      </p>
+      <p>
+        1. Tata bahasa digunakan untuk mendeskripsikan bahasa pemrograman. Lebih penting lagi, ada cara mekanis untuk mengubah deskripsi bahasa sebagai CFG menjadi parser, komponen penyusun yang menemukan struktur program sumber dan merepresentasikan struktur tersebut dengan pohon parse. Aplikasi ini adalah salah satu penggunaan CFG yang paling awal, bahkan ini adalah salah satu cara pertama dimana ide-ide teoritis dalam Ilmu Komputer menemukan jalannya ke dalam praktik.
+      </p>
+      <p>
+        2. Perkembangan XML (Extensible Markup Language) diprediksikan secara luas akan memfasilitasi perdagangan elektronik dengan memungkinkan peserta untuk berbagi konvensi mengenai format pesanan, deskripsi produk, dan banyak jenis dokumen lainnya. Bagian penting dari XML adalah Document Type Definition (DTD), yang pada dasarnya adalah tata bahasa bebas konteks yang menjelaskan tag yang diizinkan dan cara tag ini dapat disarangkan. Tag adalah kata kunci yang familiar dengan tanda kurung segitiga yang mungkin Anda ketahui dari HTML, misalnya, < EM > dan < /EM >  untuk mengelilingi teks yang perlu ditekankan. Namun, tag XML tidak berurusan dengan format teks, tetapi dengan arti teks. Misalnya, seseorang dapat mengelilingi rangkaian karakter yang dimaksudkan untuk ditafsirkan sebagai nomor telepon oleh < PHONE > dan < /PHONE >.
+      </p>
     </div>
   </div>
-</section>
-
-<!-- nomor 2 -->
-<section id="tugas1" class="row tm-section tm-mb-30">
-  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-   <div class="tm-flex-center p-5">
-     <div class="tm-md-flex-center">
-       <h2 class="tm-text-color-primary mb-4">Apa fungsi ilmu yang dipelajari dalam TBO</h2>
-       <p class="mb-4">
-         - Memverifikasi berbagai jenis sistem dengan angka berhingga atau finite number dalam 
-         keadaan berbeda, seperti protokol komunikasi atau protokol dalam keamanan pertukaran informasi.
-       </p>
-       <p class="mb-4">
-         - Mengecek dan mendesain perilaku dari sebuah sirkuit digital
-       </p>
-       <p class="mb-4">
-         - Memahami bagaimana menguraikan sistem diskrit
-       </p>
-       <p class="mb-4">
-         - Menyederhanakan proses parsing compiler dari bahasa pemrograman tertentu
-       </p>
-     </div>
-   </div>
  </div>
- <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
-   <div class="tm-flex-center p-5 tm-bg-color-primary">
-     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
-       <img src="img/img31.png" alt="Image" class="img-fluid">
-     </div>
-   </div>
+ </div>
+
+ <!-- nomor 2 -->
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Parser</h2>
+      <p>Banyak aspek bahasa pemrograman memiliki struktur yang dapat dijelaskan oleh ekspresi reguler. Namun, ada juga beberapa aspek yang sangat penting dari bahasa pemrograman tipikal yang tidak dapat direpresentasikan oleh ekspresi reguler saja.
+      </p>
+      <p>
+        Contohnya adalah perlakuan if dan else di C. Klausa if dapat tampak tidak seimbang dengan klausa else, atau mungkin diimbangi dengan klausa else yang cocok. Tata bahasa yang menghasilkan kemungkinan urutan if dan else (masing-masing diwakili oleh i dan e) adalah : <br> 
+        <b>S ➝ ∈ | SS | iS | iSeS</b> <br>
+        Misalnya, ieie, iie, dan iei adalah kemungkinan urutan if dan else, dan masing-masing string ini dihasilkan oleh tata bahasa di atas. Beberapa contoh urutan ilegal, yang tidak dihasilkan oleh tata bahasa, adalah ei dan ieeii. <br>
+        <img src="img/three.png" alt=""> <br>
+        Misalnya, perhatikan iieie. Mencocokkan huruf e pertama dengan huruf i di kirinya menyisakan iie. Mencocokkan sisa e dengan i pada kirinya menyisakan i. Sekarang tidak ada lagi e, jadi tes berhasil. Kesimpulan ini juga masuk akal, karena urutan iieie sesuai dengan program C yang strukturnya seperti pada Gambar 5.10. Faktanya, algoritma pencocokan juga memberitahu kita (dan kompiler C) yang mana jika cocok dengan yang lain. Pengetahuan itu penting jika kompilator ingin membuat logika aliran kontrol yang dimaksudkan oleh pemrogram.
+      </p>
+    </div>
+  </div>
+ </div>
  </div>
  </section>
 
-<!-- nomor 3 -->
+   <!-- nomor 3 -->
 <section class="row tm-section tm-mb-30">
- <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-  <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
-    <div class="tm-md-flex-center">
-     <h2 class="mb-4 tm-text-color-primary">Contoh penerapan ilmu TBO</h2>
-     <p class="mb-4">
-       - Artificial Intelligence, dalam memodelkan pemecahan masalah atau solusi dari permasalahan 
-       aplikasi berbasis AI teori otomata digunakan, khususnya Finite State Automata (FSA).
-       Karena dengan pemodelan menggunakan FSA ini lebih sederhana dibandingkan menggunakan 
-       pohon keputusan jika terdapat beberapa state yang muncul berulang.
-     </p>
-     <p class="mb-4">
-       - Vending Machine, pada pembuatan logikanya diperlukan teori otomata yang menjelaskan tentang
-       mesin sekuensial, yaitu mesin yang melakukan kejadian atau peristiwa tergantung pada kejadian atau 
-       peristiwa sebelumnya. Selain itu, diperlukan juga graf berarah yang berguna untuk membantu mesin sekuensial
-       untuk menunjuk kejadian atau peristiwa yang harus dilakukan selanjutnya setelah kejadian sekarang selesai.
-     </p>
-     <p class="mb-4">
-       - Karaoke Timezone, Deterministic Finite Automata (DFA) digunakan dalam proses pemutaran lagu di mesin karaoke 
-       mulai dari awal koin belum dimasukkan dengan state/keadaan belum terpenuhi sampai koin dimasukkan sehingga state/keadaan
-       terpenuhi.
-     </p>
-   </div>
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Markup Language</h2>
+      <p>"String" dalam markup languages adalah dokumen dengan tanda tertentu (disebut tag) di dalamnya. Tag memberitahu kita sesuatu tentang semantik berbagai string di dalam dokumen. Bahasa markup yang mungkin paling Anda kenal adalah HTML (HyperText Markup Language). Bahasa ini memiliki dua fungsi utama: membuat hubungan antar dokumen dan mendeskripsikan format (“tampilan”) dari sebuah dokumen. Berikut ini adalah tampilan sederhana dari struktur HTML, tetapi contoh berikut harus menyarankan baik strukturnya dan bagaimana CFG dapat digunakan untuk mendeskripsikan dokumen HTML legal dan untuk memandu pemrosesan (yaitu, tampilan pada monitor atau printer) dari sebuah dokumen. <br>
+      <img src="img/four.png" alt=""> <br>
+      Gambar diatas adalah CFG yang mendeskripsikan struktur bahasa HTML. <br>
+      > Dalam baris (1) disarankan bahwa karakter dapat berupa "a" atau "A" atau banyak kemungkinan karakter lain yang merupakan bagian dari kumpulan karakter HTML. <br>
+      > Baris (2) mengatakan, dengan menggunakan dua produksi, Teks itu bisa berupa string kosong, atau karakter legal apa pun yang diikuti oleh lebih banyak teks. <br>
+      > Baris (3) mengatakan bahwa dokumen adalah urutan dari nol atau lebih “elemen.” <br> 
+      > Sebuah elemen pada gilirannya, kita pelajari pada baris (4), bisa berupa teks, dokumen yang ditekankan, awal paragraf diikuti dengan dokumen, atau daftar. Ada juga produksi lain untuk Elemen, sesuai dengan jenis tag lain yang muncul di HTML. <br>
+      > Kemudian, di baris (5) kita menemukan bahwa item daftar adalah tag < LI > diikuti dengan dokumen apa pun, <br>
+      > dan baris (6) memberitahu kita bahwa daftar adalah urutan dari nol atau lebih elemen daftar.
+      </p>
+    </div>
+  </div>
  </div>
-</div>
-<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-xl-right text-md-center text-center mt-5 mt-lg-0 pr-lg-0">
- <img src="img/rsz_img32.png" alt="Image" class="img-fluid">
-</div>
+ </div>
 </section>
 
  <!-- Contact-->
