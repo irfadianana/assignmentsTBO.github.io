@@ -61,13 +61,10 @@
     <div class="tm-md-flex-center">
       <h2 class="tm-text-color-primary mb-4">Turing Machine</h2>
       <p class="mb-4">
-        Context Free Grammar (CFG)/ Bahasa Bebas Konteks adalah sebuah tata bahasa dimana tidak terdapat pembatasan pada hasil produksinya. 
-        CFG mempunyai tujuan sama seperti halnya tata bahasa regular yaitu merupakan suatu cara untuk menunjukkan bagaimana menghasilkan suatu 
-        untai-untai dalam sebuah bahasa. Context-free grammars telah memainkan peran sentral dalam teknologi kompiler sejak tahun 1960-an. 
-        Mereka mengubah implementasi parser (fungsi yang menemukan struktur program) dari tugas implementasi ad-hoc yang memakan waktu 
-        menjadi pekerjaan rutin yang bisa dilakukan di sore hari. Baru-baru ini, tata bahasa bebas konteks telah digunakan untuk menggambarkan 
-        format dokumen, melalui apa yang disebut definisi tipe dokumen (DTD) yang digunakan dalam komunitas XML (bahasa markup yang dapat diperluas) 
-        untuk pertukaran informasi di Web.
+        Mesin turing adalah model komputasi teoritis yang ditemukan oleh Alan Turing, berfungsi sebagai model ideal untuk melakukan perhitungan matematis. Walaupun model ideal ini diperkenalkan sebelum komputer nyata dibangun, model ini tetap diterima kalangan ilmu komputer sebagai model komputer yang sesuai untuk menentukan apakah suatu fungsi dapat selesaikan oleh komputer atau tidak (menentukan computable function). Mesin Turing terkenal dengan ungkapan " Apapun yang bisa dilakukan oleh Mesin Turing pasti bisa dilakukan oleh komputer."
+      </p>
+      <p>
+        Sebuah mesin turing terdiri atas barisan sel tersusun berupa pita yang dapat bergerak maju mundur, komponen aktif baca/tulis pita yang memiliki status perhitungan serta dapat mengubah/menulisi sel aktif yang ada di pita tadi, dan suatu kumpulan instruksi bagaimana komponen baca/tulis ini harus melakukan modifikasi terhadap sel aktif pada pita, serta bagaimana menggerakkan pita tersebut. Pada setiap langkah dalam komputasi, mesin ini akan dapat mengubah isi dari sel yang aktif, mengubah status dari komponen baca/tulis, dan mengubah posisi pita ke kiri atau ke kanan.
       </p>
     </div>
   </div>
@@ -75,31 +72,33 @@
 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
   <div class="tm-flex-center p-5 tm-bg-color-primary">
     <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 p-0 text-center">
-      <img src="img/tugas5.png" alt="Image" class="img-fluid">
+      <img src="img/alanturing.jpg" alt="Image" class="img-fluid">
     </div>
   </div>
 </div>
 </section>
-
-<section class="tm-mb-30">
-  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 text-center">
-    <h2>Aplikasi Pemanfaatan Context Free Grammar </h2>
-  </div>
-  </section>
 
   <!-- nomor 1 -->
 <section class="row tm-section tm-mb-30">
   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
    <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
      <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Sejarah Mesin Turing </h2>
       <p>
-        Context-free grammar awalnya disusun oleh N. Chomsky sebagai cara untuk mendeskripsikan bahasa alami. Janji itu belum terpenuhi. Namun, karena penggunaan untuk konsep yang didefinisikan secara rekursif dalam Ilmu Komputer telah berlipat ganda, begitu pula kebutuhan CFG sebagai cara untuk menggambarkan contoh konsep ini. Akan dibuat sketsa dua kegunaan ini, satu lama dan satu baru.
+        Jauh sebelum lahirnya program komputer, Alan Turing pada tahun 1936 telah mengeluarkan gagasannya berupa model mesin abstrak sebagai alat mekanik untuk mengerjakan prosedur yang efektif. Model ini disebut Mesin Turing.
       </p>
       <p>
-        1. Tata bahasa digunakan untuk mendeskripsikan bahasa pemrograman. Lebih penting lagi, ada cara mekanis untuk mengubah deskripsi bahasa sebagai CFG menjadi parser, komponen penyusun yang menemukan struktur program sumber dan merepresentasikan struktur tersebut dengan pohon parse. Aplikasi ini adalah salah satu penggunaan CFG yang paling awal, bahkan ini adalah salah satu cara pertama dimana ide-ide teoritis dalam Ilmu Komputer menemukan jalannya ke dalam praktik.
+        Mesin turing dapat diadaptasi untuk mensimulasi logika dari setiap algoritma oleh karena itu cara kerja mesin turing adalah ekivalen dengan cara kerja komputer sekarang ini dan mesin turing juga ekivalen dengan problema komputasi matematika. Mesin turing tidak ditujukan sebagai teknologi komputasi praktis tetapi lebih sebagai eksperimen pemikiran yang mewakili sebuah mesin komputasi. Mesin turing membantu para ilmuan komputer memahami batas-batas komputasi mekanis.
       </p>
       <p>
-        2. Perkembangan XML (Extensible Markup Language) diprediksikan secara luas akan memfasilitasi perdagangan elektronik dengan memungkinkan peserta untuk berbagi konvensi mengenai format pesanan, deskripsi produk, dan banyak jenis dokumen lainnya. Bagian penting dari XML adalah Document Type Definition (DTD), yang pada dasarnya adalah tata bahasa bebas konteks yang menjelaskan tag yang diizinkan dan cara tag ini dapat disarangkan. Tag adalah kata kunci yang familiar dengan tanda kurung segitiga yang mungkin Anda ketahui dari HTML, misalnya, < EM > dan < /EM >  untuk mengelilingi teks yang perlu ditekankan. Namun, tag XML tidak berurusan dengan format teks, tetapi dengan arti teks. Misalnya, seseorang dapat mengelilingi rangkaian karakter yang dimaksudkan untuk ditafsirkan sebagai nomor telepon oleh < PHONE > dan < /PHONE >.
+        Sebagai input dari mesin turing adalah kata atau untai atas suatu alfabet T. Mesin turing berhenti dengan keadaan menerima atau menolak untai. Kadang-kadang terjadi pula perulangan atau looping tak terhingga.
+      </p>
+      <img src="img/fig3.png" alt=""> <br>
+      <p>
+        Keterangan : <br>
+        > Tape : Tempat diletakannya inputan yang berupa kata/untai. <br>
+        > Head : Membaca dan menulisi sel pita mesin turing, bisa bergerak ke kiri atau ke kanan. <br>
+        > Finite State Control (FSC) : Otak dari Turing Machine, diimplementasikan dari algoritma pengenalan kalimat.
       </p>
     </div>
   </div>
@@ -111,15 +110,12 @@
   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
    <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
      <div class="tm-md-flex-center">
-      <h2 class="mb-4 tm-text-color-primary">Parser</h2>
-      <p>Banyak aspek bahasa pemrograman memiliki struktur yang dapat dijelaskan oleh ekspresi reguler. Namun, ada juga beberapa aspek yang sangat penting dari bahasa pemrograman tipikal yang tidak dapat direpresentasikan oleh ekspresi reguler saja.
-      </p>
+      <h2 class="mb-4 tm-text-color-primary">Spesifikasi Mesin Turing</h2>
       <p>
-        Contohnya adalah perlakuan if dan else di C. Klausa if dapat tampak tidak seimbang dengan klausa else, atau mungkin diimbangi dengan klausa else yang cocok. Tata bahasa yang menghasilkan kemungkinan urutan if dan else (masing-masing diwakili oleh i dan e) adalah : <br> 
-        <b>S ➝ ∈ | SS | iS | iSeS</b> <br>
-        Misalnya, ieie, iie, dan iei adalah kemungkinan urutan if dan else, dan masing-masing string ini dihasilkan oleh tata bahasa di atas. Beberapa contoh urutan ilegal, yang tidak dihasilkan oleh tata bahasa, adalah ei dan ieeii. <br>
-        <img src="img/three.png" alt=""> <br>
-        Misalnya, perhatikan iieie. Mencocokkan huruf e pertama dengan huruf i di kirinya menyisakan iie. Mencocokkan sisa e dengan i pada kirinya menyisakan i. Sekarang tidak ada lagi e, jadi tes berhasil. Kesimpulan ini juga masuk akal, karena urutan iieie sesuai dengan program C yang strukturnya seperti pada Gambar 5.10. Faktanya, algoritma pencocokan juga memberitahu kita (dan kompiler C) yang mana jika cocok dengan yang lain. Pengetahuan itu penting jika kompilator ingin membuat logika aliran kontrol yang dimaksudkan oleh pemrogram.
+        1. Mesin Turing memiliki pita berupa array sebagai memori yang dapat menyimpan sebuah simbol tunggal. <br>
+        2. Mesin Turing memiliki head sebagai penunjuk posisi yang sedang diakses ke pita. <br>
+        3. Head dapat bergerak ke kanan atau ke kiri pada pita sesuai fungsi transisi yang ditetapkan untuk membaca inputan. <br>
+        4. Head juga dapat melakukan penulisan atau mengubah isi pita.
       </p>
     </div>
   </div>
@@ -132,22 +128,84 @@
   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
    <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
      <div class="tm-md-flex-center">
-      <h2 class="mb-4 tm-text-color-primary">Markup Language</h2>
-      <p>"String" dalam markup languages adalah dokumen dengan tanda tertentu (disebut tag) di dalamnya. Tag memberitahu kita sesuatu tentang semantik berbagai string di dalam dokumen. Bahasa markup yang mungkin paling Anda kenal adalah HTML (HyperText Markup Language). Bahasa ini memiliki dua fungsi utama: membuat hubungan antar dokumen dan mendeskripsikan format (“tampilan”) dari sebuah dokumen. Berikut ini adalah tampilan sederhana dari struktur HTML, tetapi contoh berikut harus menyarankan baik strukturnya dan bagaimana CFG dapat digunakan untuk mendeskripsikan dokumen HTML legal dan untuk memandu pemrosesan (yaitu, tampilan pada monitor atau printer) dari sebuah dokumen. <br>
-      <img src="img/four.png" alt=""> <br>
-      Gambar diatas adalah CFG yang mendeskripsikan struktur bahasa HTML. <br>
-      > Dalam baris (1) disarankan bahwa karakter dapat berupa "a" atau "A" atau banyak kemungkinan karakter lain yang merupakan bagian dari kumpulan karakter HTML. <br>
-      > Baris (2) mengatakan, dengan menggunakan dua produksi, Teks itu bisa berupa string kosong, atau karakter legal apa pun yang diikuti oleh lebih banyak teks. <br>
-      > Baris (3) mengatakan bahwa dokumen adalah urutan dari nol atau lebih “elemen.” <br> 
-      > Sebuah elemen pada gilirannya, kita pelajari pada baris (4), bisa berupa teks, dokumen yang ditekankan, awal paragraf diikuti dengan dokumen, atau daftar. Ada juga produksi lain untuk Elemen, sesuai dengan jenis tag lain yang muncul di HTML. <br>
-      > Kemudian, di baris (5) kita menemukan bahwa item daftar adalah tag < LI > diikuti dengan dokumen apa pun, <br>
-      > dan baris (6) memberitahu kita bahwa daftar adalah urutan dari nol atau lebih elemen daftar.
+      <h2 class="mb-4 tm-text-color-primary">Definisi Mesin Turing</h2>
+      <p>
+        Mesin Turing didefinisikan sebagai 7 tuple M = {Q, S, G, S, F, Ь, ∆} <br>
+        Q: himpunan hingga state, <br>
+        S: alfabet input, <br> 
+        G: simbol pada pita (meliputi pula blank) <br>
+        S: state awal, S Î Q <br>
+        Ь: simbol kosong (blank) (bukan bagian dari S ) <br>
+        ∆: fungsi transisi <br>
+        F: state akhir, F Î Q
       </p>
     </div>
   </div>
  </div>
  </div>
 </section>
+
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Prinsip Kerja Mesin Turing</h2>
+      <p>
+        1. Lihat state semula dan simbol yang ditunjuk head
+      </p>
+      <p>
+        2. Berdasarkan fungsi transisinya, tentukan : <br>
+        > State berikutnya <br>
+        > Gerakkan head ke kanan dan ke kiri
+      </p>
+      <p>
+        3. Bila dari pasangan state dan simbol yang ditunjuk head tidak ada lagi fungsi transisinya, berarti mesin turing berhenti.
+      </p>
+      <p>
+        4. Bila Mesin Turing berhenti di dalam state final (F), berarti input diterima. 
+        Sebaliknya jika mesin berhenti tidak pada state akhir, maka berarti inputan tersebut ditolak.
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Contoh</h2>
+      <p>
+        Mesin Turing  M akan digunakan untuk mengenali bahasa   L = {0n1n | n ≥ 1}. Contoh string di dalam L misalnya <br>
+        <b>01, 0011, 000111, 00001111, dst.</b>
+      </p>
+      <p>
+        Cara kerja mesin turing untuk mengenali bahasa L ditanyakan dengan algoritma berikut : <br>
+        1.  Ganti simbol ‘0’ paling kiri dengan simbol ‘X’. <br>
+        2.  Gerakkan head ke kanan hingga dijumpai simbol ‘1’. <br>
+        3.  Ganti simbol ‘1’ paling kiri dengan simbol ‘Y’ <br>
+        4.  Gerakkan head ke kiri hingga dijumpai simbol ‘X’ <br>
+        5.  Geser head ke kanan (akan diperoleh ‘0’ paling kiri). <br>
+        6.  Kembali ke langkah 1.
+      </p>
+      <p>
+        > Jika pada saat bergerak ke kanan untuk mencari ‘1’ , mesin Turing M menjumpai simbol B, maka berarti banyaknya ‘0’ lebih dari banyaknya ‘1’.  
+        Kesimpulannya,  string masukan tidak dikenali. <br>
+        > Jika pada saat bergerak ke kiri M tidak menjumpai lagi ‘0’, maka  M memeriksa apakah masih ada ‘1’. Bila habis maka string diterima (dikenali). <br>
+        > Jika sebuah string diterima (dikenali), maka mesin Turing M berhenti. Untuk string yang tidak dikenali (ditolak) ada kemungkinan M tidak berhenti (looping).
+      </p>
+      <p>
+        Contoh : String masukkan adalah <b>000111</b> <br>
+        <img src="img/contoh1.png" alt=""> <br>
+        <img src="img/contoh2.png" alt=""> <br>
+        Kesimpulan : String <b>000111</b> dikenali oleh mesin M.
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+ </section>
 
  <!-- Contact-->
  <section id="about" class="contact-section bg-black">
