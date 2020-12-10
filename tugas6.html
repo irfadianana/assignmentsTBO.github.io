@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Chomsky Hierarchy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                        
+  <link rel="stylesheet" href="css/style.css">                                    
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Irfadiana Nurhasanah</a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" style="color: #64a19d;" href="#about">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas1.html">TBO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas2.html">Big-O <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas3.html">NFA to DFA <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas4.html">Regex <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas5.html">CFG <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #64a19d;" href="tugas7.html">Turing Machine <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </span>
+    </div>
+  </nav>
+
+ <div class="container">
+
+<!-- Tugas 1 -->
+<section id="tugas1" class="row tm-section tm-mb-30">
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+  <div class="tm-flex-center p-5">
+    <div class="tm-md-flex-center">
+      <h2 class="tm-text-color-primary mb-4">Chomsky Hierarchy</h2>
+      <p class="mb-4">
+        Menurut Noam Chomsky, ada empat jenis tata bahasa : Tipe 0, Tipe 1, Tipe 2, dan Tipe 3. Tabel disamping ini menunjukkan perbedaannya satu sama lain
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+  <div class="tm-flex-center p-5 tm-bg-color-primary">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 p-0 text-center">
+      <img src="img/fig2.png" alt="Image" class="img-fluid">
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- nomor 1 -->
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <p>
+        Hierarki Chomsky mewakili kelas bahasa yang diterima oleh mesin yang berbeda. Kategori bahasa dalam Hierarki Chomsky adalah seperti yang diberikan di bawah ini : 
+      </p>
+      <p>
+        1. Tipe 0 dikenal sebagai Unrestricted Grammar. <br>
+        2. Tipe 1 dikenal sebagai Context Sensitive Grammar. <br>
+        3. Tipe 2 dikenal sebagai Context Free Grammar. <br>
+        4. Tipe 3 dikenal sebagai Regular Grammar. <br>
+        </p>
+      <p>
+        <img src="img/fig1.png" alt="" style="height: 300px;"> <br>
+        Ini adalah hierarki. Oleh karena itu setiap bahasa tipe 3 juga tipe 2, 1 dan 0. Demikian pula, setiap bahasa tipe 2 juga tipe 1 dan tipe 0, dll.
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+
+ <!-- nomor 2 -->
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Tipe 0 : Unrestricted Grammar</h2>
+      <p>Tipe 0 dikenal sebagai tata bahasa tak terbatas. Tidak ada batasan pada aturan tata bahasa dari jenis bahasa ini. Bahasa-bahasa ini dapat dimodelkan secara efisien oleh Turing Machine.
+      </p>
+      <p>
+        Contoh : <br>
+        <b>bAa → aa</b> <br>
+        <b> S → s </b> <br>
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+ </section>
+
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Tipe 1 : Context Sensitive Grammar</h2>
+      <p>
+        Tipe 1 dikenal sebagai Tata Bahasa Peka Konteks. Tata bahasa peka konteks digunakan untuk mewakili bahasa peka konteks. Tata bahasa peka konteks mengikuti aturan berikut : <br>
+        > Tata bahasa peka konteks dapat memiliki lebih dari satu simbol di sisi kiri aturan produksinya. <br>
+        > Jumlah simbol di sisi kiri tidak boleh melebihi jumlah simbol di sisi kanan. <br>
+        > Aturan bentuk A → ε tidak diperbolehkan kecuali A adalah simbol awal. Itu tidak terjadi di sisi kanan aturan mana pun. <br>
+        > Tata bahasa Tipe 1 harus Tipe 0. Pada tipe 1, Produksi dalam bentuk V → T <br>
+        Dimana jumlah simbol pada V kurang dari atau sama dengan T.
+      </p>
+      <p>
+        Contoh : <br>
+        <b> S → AT  </b> <br>
+        <b> T → xy </b> <br> 
+        <b> A → a  </b> 
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Tipe 2 : Context Free Grammar</h2>
+      <p>
+        Type 2 Grammar dikenal sebagai Context Free Grammar. Bahasa bebas konteks adalah bahasa yang dapat diwakili oleh tata bahasa bebas konteks (CFG). Tipe 2 harus tipe 1. Aturan produksi dalam bentuk <br>
+        <b>A → α  </b> <br>
+        Dimana A adalah non-terminal tunggal dan kombinasi terminal dan non-terminal.
+      </p>
+      <p>
+        Contoh : <br>
+        <b> A → aBb  </b> <br>
+        <b> A → b  </b> <br>
+        <b> B → a  </b>
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+   <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+     <div class="tm-md-flex-center">
+      <h2 class="mb-4 tm-text-color-primary">Tipe 3 : Regular Grammar</h2>
+      <p>
+        Type 3 Grammar disebut Regular Grammar. Bahasa reguler adalah bahasa yang dapat dideskripsikan menggunakan ekspresi reguler. Bahasa-bahasa ini dapat dimodelkan oleh NFA atau DFA. <br>
+        Tipe 3 adalah bentuk tata bahasa yang paling terbatas. Tata bahasa Tipe 3 harus Tipe 2 dan Tipe 1. Tipe 3 harus dalam bentuk <br>
+        <b> V → T * V / T *  </b>
+      </p>
+      <p>
+        Contoh : <br>
+        <b> A → xy  </b>
+      </p>
+    </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+ <!-- Contact-->
+ <section id="about" class="contact-section bg-black">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">Irfadiana Nurhasanah - D121181501</h4>
+                      <hr class="my-4" />
+                      <div class="small text-black-50">Informatics Engineering</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-envelope text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">E-mail</h4>
+                      <hr class="my-4" />
+                      <div class="small text-black-50"><a href="#!">irfadiananurhasanah@gmail.com</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                      <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">GitHub</h4>
+                      <hr class="my-4" />
+                      <div class="small text-black-50">irfadianana</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="row">
+  <div class="col-lg-12">
+    <p class="text-center small tm-copyright-text mb-0">Copyright &copy; <span class="tm-current-year">2020 | </span> Irfadiana Nurhasanah</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
